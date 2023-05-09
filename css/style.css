@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(135deg, #facff4, #f581ef, #98f1b6, #ffffff, #a1ee8a, #bdf7c2, #faf6f6);
+    background-size: 500%;
+    animation: fanimado 20s infinite;
+    height: 100vh;
+}
+
+main {
+    margin-top: 80px;
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.2);
+    /* Color de fondo con transparencia */
+    border-radius: 10px;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque de fondo */
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    /* Sombra */
+    text-align: center;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+}
+
+
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 20px;
+    z-index: 100;
+}
+
+.btn-wsp:hover {
+    filter: grayscale(50%);
+}
+
+@keyframes fanimado {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.entrada {
+    animation: enterAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes enterAnim {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card-img-top {
+    padding-top: 10px;
+}
+
+.card {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+}
+
+
+
+#ubicacion {
+    margin-top: 30px;
+}
