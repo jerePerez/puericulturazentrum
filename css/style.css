@@ -8,7 +8,7 @@ body {
     background-image: linear-gradient(135deg, #facff4, #f581ef, #98f1b6, #ffffff, #a1ee8a, #bdf7c2, #faf6f6);
     background-size: 500%;
     animation: fanimado 20s infinite;
-    height: 100vh;
+    height: 100%;
 }
 
 main {
@@ -92,4 +92,26 @@ main {
 
 #ubicacion {
     margin-top: 30px;
+}
+
+#contacto {
+    margin-bottom: 60px;
+}
+
+#mapa {
+    margin-bottom: 60px;
+}
+
+.zoom:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.color {
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.color:hover {
+    filter: grayscale(0%);
 }
